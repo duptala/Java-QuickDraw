@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.SetDifficultyController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/CHOOSE_DIFFICULTY.png" />
+         </image>
+      </ImageView>
+      <ButtonBar fx:id="buttonBar" layoutX="24.0" layoutY="223.0" prefHeight="68.0" prefWidth="575.0">
+         <buttons>
+            <Button id="greeneasyv2" fx:id="easyButton" maxWidth="170.0" minWidth="160.0" mnemonicParsing="false" onAction="#onEasyPush" prefHeight="68.0" prefWidth="170.0" stylesheets="@../css/stylesheet.css" text="Easy">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button id="orangeeasyv2" fx:id="mediumButton" maxWidth="170.0" mnemonicParsing="false" onAction="#onMediumPush" prefHeight="120.0" prefWidth="170.0" stylesheets="@../css/stylesheet.css" text="Medium">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button id="redv2" fx:id="hardButton" maxWidth="170.0" mnemonicParsing="false" onAction="#onHardPush" prefHeight="68.0" prefWidth="170.0" stylesheets="@../css/stylesheet.css" text="Hard">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button id="masterBtnv2" fx:id="masterButton" mnemonicParsing="false" onAction="#onMasterPush" prefHeight="120.0" stylesheets="@../css/stylesheet.css" text="Master" />
+         </buttons>
+      </ButtonBar>
+      <Button id="bevel" fx:id="backButton" layoutX="290.0" layoutY="370.0" mnemonicParsing="false" onAction="#onBackPush" stylesheets="@../css/stylesheet.css" text="Back" />
+   </children>
+</Pane>

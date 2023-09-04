@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.zenReadyController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/READY.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="wordLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="161.0" prefHeight="56.0" prefWidth="470.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button id="greeneasy" fx:id="readyButton" layoutX="59.0" layoutY="243.0" mnemonicParsing="false" onAction="#onReadyPush" prefHeight="130.0" prefWidth="254.0" stylesheets="@../css/stylesheet.css" text="I&quot;m Ready!">
+         <font>
+            <Font name="Dubai Regular" size="40.0" />
+         </font>
+      </Button>
+      <Button id="red" fx:id="noButoon" layoutX="326.0" layoutY="242.0" mnemonicParsing="false" onAction="#onNoPush" prefHeight="130.0" prefWidth="254.0" stylesheets="@../css/stylesheet.css" text="No...">
+         <font>
+            <Font name="Dubai Regular" size="40.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
